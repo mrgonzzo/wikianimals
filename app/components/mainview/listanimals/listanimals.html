@@ -1,3 +1,9 @@
-<lu>
-    <li ng-repeat="item in compListanimals.allanimals">{{item.name}}<comp-animalcard></comp-animalcard></li>
-</lu>   
+<div>
+    <lu>
+        
+
+            <comp-animalcard ng-repeat="item in compListanimals.allanimals" item-animal="item">
+            </comp-animalcard>
+
+    </lu>
+</div>
