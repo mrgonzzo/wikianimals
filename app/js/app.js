@@ -14,7 +14,11 @@
     };
     var detail = {
       name: 'detail',
-      url: '/detail',
+    //  url: '/detail',
+    url: '/detail/:idAnimal',//idAnimal es un parametro
+    params:{
+      idAnimal:{squash:true,value: null}
+    },
      template: '<comp-detailview></comp-detailview>'   
     };
     var about ={

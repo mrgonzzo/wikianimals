@@ -13,8 +13,8 @@
         vm.$onInit = function () {
             vm.allanimals = animalFactory.getAllAnimals();
         };
-        vm.goToDetail = function (){
-            $state.go('detail');
+        vm.goToDetail = function (_idAnimal_){
+            $state.go('detail',{idAnimal:_idAnimal_});
         }
     }
 })(angular)
