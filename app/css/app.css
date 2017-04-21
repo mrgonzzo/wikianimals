@@ -1,0 +1,15 @@
+.card{
+    border: 1px solid;
+    width: 33%;
+    height: 300px;
+    float: left;
+}
+.picture{
+    width: 200px;
+    }
+.ciname{
+    font-style: italic;
+}
+.clearfix {
+  overflow: auto;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "wikianimals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrgonzzo/wikianimals.git"
+  },
+  "author": "mrgonzzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrgonzzo/wikianimals/issues"
+  },
+  "homepage": "https://github.com/mrgonzzo/wikianimals#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.4.2"
+  }
+}
