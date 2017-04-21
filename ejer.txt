@@ -1,0 +1,6 @@
+ej
+
+
+1del header al main
+añadir botones para ordenar el array 
+añadir buscador como hice con las banderas

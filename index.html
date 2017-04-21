@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="theme-color" content="#637082">
-<link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="app/css/app.css">
 
 </head>
 
 <body ng-app="app" ng-strict-di>
     <script src="app/js/vendor/angular.min.js"></script>
+    <script src="app/js/vendor/angular-ui-router.min.js"></script>
     <!-- our app -->
     <script src="app/js/app.js"></script>
     <script src="app/services/animal-factory.js"></script>
@@ -23,9 +24,15 @@
     <script src="app/components/mainview/mainview.js"></script>
     <script src="app/components/mainview/listanimals/listanimals.js"></script>
     <script src="app/components/mainview/cardanimals/cardanimals.js"></script>
+    <script src="app/components/detailview/detailview.js"></script>
 
     <!-- Put your HTML code here -->
-    <comp-mainview></comp-mainview>
+    <!-- <comp-mainview></comp-mainview> con un router ya no lo pegamos a fuego, y tambien sacamos del componente los common header footer -->
+    <comp-header></comp-header>
+    <hr>
+    <ui-view></ui-view>
+    <hr>
+    <comp-footer></comp-footer>
 
 
 </body>

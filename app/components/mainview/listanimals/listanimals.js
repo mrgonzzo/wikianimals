@@ -4,14 +4,17 @@
         // otra opción es poner aquí directamente el html asignándoselo a template:
         templateUrl: 'app/components/mainview/listanimals/listanimals.html',
         // en controller definimos la función que escribimos abajo
-        controller: ['$log', 'animalFactory', controladorCompListAnimals],
+        controller: ['$log', '$state', 'animalFactory', controladorCompListAnimals],
         // declaramos un alias para no tener que usar $ctrl.
         controllerAs: 'compListanimals'
     });
-    function controladorCompListAnimals($log, animalFactory) {
+    function controladorCompListAnimals($log, $state, animalFactory) {
         var vm = this;
         vm.$onInit = function () {
             vm.allanimals = animalFactory.getAllAnimals();
+        };
+        vm.goToDetail = function (){
+            $state.go('detail');
         }
     }
 })(angular)

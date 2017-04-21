@@ -2,11 +2,13 @@
 
   angular.module('app').component('compMainview', {
     // otra opción es poner aquí directamente el html asignándoselo a template:
-    templateUrl:  'app/components/mainview/mainview.html',
+    templateUrl:'app/components/mainview/mainview.html',
     // en controller definimos la función que escribimos abajo
-    //controller: controladorCompMainView,
+    controller: controladorCompMainView,
     // declaramos un alias para no tener que usar $ctrl.
-   // controllerAs: 'compMain'
+    controllerAs: 'compMain'
 })
-
+function controladorCompMainView() {
+    var vm = this;
+}
 })(angular)

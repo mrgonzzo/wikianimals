@@ -14,6 +14,7 @@
     function controladorCompCardAnimals($log, animalFactory) {
         var vm = this;
         //var imgpath = itemAnima.
+        
     }
 
 })(angular);
