@@ -10,7 +10,7 @@
             { id: 4, name: "Cangrejo yeti", ciname: "Kiwa hirsuta", picture: "cangrejo.jpg" },
             { id: 5, name: "oso de agua", ciname: "Tardigrada", picture: "tardigrada.gif" },
             { id: 6, name: "Lagarto cornudo", ciname: "Phrynosoma cornutum", picture: "lagarto.gif" },
-            { id: 7, name: "Gato esfinge", ciname: "Sphynx", picture: "Sphynx.gif" },
+            { id: 7, name: "Gato esfinge", ciname: "Sphynx", picture: "Sphynx.gif" }
         ];
 
         module.getAllAnimals = function () {

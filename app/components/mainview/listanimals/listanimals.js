@@ -16,5 +16,7 @@
         vm.goToDetail = function (_idAnimal_){
             $state.go('detail',{idAnimal:_idAnimal_});
         }
+        
+
     }
 })(angular)
