@@ -13,3 +13,6 @@
 .clearfix {
   overflow: auto;
 }
+.detname{
+    height: 25px;
+}
