@@ -16,3 +16,10 @@
 .detname{
     height: 25px;
 }
+.buttonus{
+    border-style: solid;
+    border-color: navy;
+    border-radius: 15px;
+    background-color: grey;
+    width: 100px;
+}

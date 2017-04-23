@@ -12,19 +12,20 @@
     function controladorCompDetailView($stateParams, animalFactory) {
         var vm = this;
         var idanimal = $stateParams.idAnimal;
+       vm.$onInit = function () {
+           vm.animal =animalFactory.getAnimalById(idanimal);
+       }
+       /* esto nos lo llevamos a la factory
         vm.allanimals = animalFactory.getAllAnimals();
         vm.animal = null;
         vm.$onInit = function () {
             for (var i = 0; i < vm.allanimals.length; i++) {
                 if (idanimal == vm.allanimals[i].id) {
                     vm.animal = vm.allanimals[i];
-              
                 }
-              
             }
-          
         };
 
-
+*/
     }
 })(angular)

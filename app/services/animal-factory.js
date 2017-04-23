@@ -13,6 +13,16 @@
             return animalsarray;
         };
 
+        module.getAnimalById = function (idanimal) {
+            console.log("idanimal: "+idanimal);
+            for (var i = 0; i < animalsarray.length; i++) {
+                if (idanimal == animalsarray[i].id) {
+                    animal = animalsarray[i];
+                }
+            }
+            return animal;
+        };
+
         return module;
     };
 })(angular);

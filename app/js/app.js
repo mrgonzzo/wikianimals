@@ -24,7 +24,7 @@
     var about ={
       name:'aboutus',
       url:'/aboutus',
-      template:'<p>sobre nosotros</p>'
+      template:'<comp-aboutus></comp-aboutus>'
     }
     $stateProvider.state(main);
     $stateProvider.state(detail);
