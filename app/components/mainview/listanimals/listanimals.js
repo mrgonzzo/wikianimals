@@ -12,6 +12,7 @@
         var vm = this;
         vm.$onInit = function () {
             vm.allanimals = animalFactory.getAllAnimals();
+            vm.clase = 'formvirgin';
         };
 
 
@@ -21,18 +22,30 @@
             $state.go('detail', { idAnimal: _id_ });
         }
 
-      
+
         vm.addForm = function () {
             var animal = {};
+            if (!vm.name) {
+                vm.clase = 'formko';
+            } else { vm.clase = 'formok' };
+
+            if (!vm.ciname) {
+                vm.clase = 'formko';
+            } else { vm.clase = 'formok' };
+
+            if (!vm.picture) {
+                vm.clase = 'formko';
+            } else { vm.clase = 'formok' };
+            
             animal.name = vm.name;
             animal.ciname = vm.ciname;
             animal.picture = vm.picture;
- switch (vm.type) {
+            switch (vm.type) {
                 case '1':
                     tipo = 'australiano';
                     break;
                 case '2':
-                   tipo = 'acuatico';
+                    tipo = 'acuatico';
                     break;
                 case '3':
                     tipo = 'europeo';

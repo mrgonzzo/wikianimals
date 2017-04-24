@@ -50,5 +50,14 @@ background: green;
 background: blue;
 }
 .europeo{
-    background: red;
+    background: purple;
+}
+.formko{
+    border-color: red;
+}
+.formok{
+    border-color: green;
+}
+.formvirgin{
+border-color: blue;
 }

@@ -22,9 +22,10 @@
 
    </p> -->
    <div class="formulario">
-     <p> Name: <input type="text" ng-model="compListanimals.name"></p>
-     <p> Cientific name:<input type="text" ng-model="compListanimals.ciname"></p>
-     <p> img: <input type="text" ng-model="compListanimals.picture"></p>
+ <!--      <p> Name: <input type="text" ng-model="compListanimals.name" ng-class="compListanimals.clase ? 'class-if-true' : 'class-if-false'"></p> -->
+     <p> Name: <input type="text" ng-model="compListanimals.name" ng-class="compListanimals.clase"></p>
+     <p> Cientific name:<input type="text" ng-model="compListanimals.ciname" ng-class="compListanimals.clase"></p>
+     <p> img: <input type="text" ng-model="compListanimals.picture" ng-class="compListanimals.clase"></p>
      <p>Type of animal <select ng-model="compListanimals.type" >
          <option value="1">australiano</option>
          <option value="2">acuatico</option>

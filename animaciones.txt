@@ -1,0 +1,3 @@
+Animaciones Angular
+
+la libreria es angular.animate.min.js e inyectamos el modulo ng-animate

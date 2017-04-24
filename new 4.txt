@@ -1,0 +1,14 @@
+Ecosistema ANGULAR
+
+-componentes
+            templates
+			controller
+-modulos
+-Recipes
+ son todas singletod (patron que solo pemite una instancia del programa)
+        factorias (guardo datos para que sean usados por los componentes como necesitare con el array countries. serian los modelos en el mvc aunque en ocasiones se usen para hacer otras cosas
+		servicios (pequeñas diferencias con factory, no lo vemos)
+		constantes
+		providers (para hacer factorias y servicios no lo vemos)
+		
+		el controlador y la template se comunican por el this vm.controllerAs

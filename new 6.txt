@@ -1,0 +1,9 @@
+angular 	
+
+fase config (lo que ocurre hasta que se renderiza la primera pantalla)
+fase run
+
+un router nos sirve para cambiar de pantalla
+se define en la ase config.
+
+el ruter es  una libreria angular que descargamos
