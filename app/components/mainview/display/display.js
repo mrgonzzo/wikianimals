@@ -10,6 +10,8 @@
 })
 function controladorDisplay(animalFactory) {
     var vm = this;
+    //esto hay que hacerlo desde la factorya para
+    //tener los datos controlados desde un solo sitio
      vm.allanimals = animalFactory.getAllAnimals();
     vm.addAnimal = function (){
         var item = getRandomSpan()
@@ -19,7 +21,7 @@ function controladorDisplay(animalFactory) {
             
         }
 function getRandomSpan(){
-   return randomInt=Math.floor((Math.random()*7)+1);
+   return randomInt=Math.floor((Math.random()*7));
   };
   
 }
