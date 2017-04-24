@@ -20,41 +20,10 @@
         vm.goToDetail = function (_idAnimal_) {
             var _id_ = parseInt(_idAnimal_)
             $state.go('detail', { idAnimal: _id_ });
-        }
+        };
 
 
-        vm.addForm = function () {
-            var animal = {};
-            if (!vm.name) {
-                vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
-
-            if (!vm.ciname) {
-                vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
-
-            if (!vm.picture) {
-                vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
-            
-            animal.name = vm.name;
-            animal.ciname = vm.ciname;
-            animal.picture = vm.picture;
-            switch (vm.type) {
-                case '1':
-                    tipo = 'australiano';
-                    break;
-                case '2':
-                    tipo = 'acuatico';
-                    break;
-                case '3':
-                    tipo = 'europeo';
-                    break;
-            }
-            animal.type = tipo;
-            animal.id = vm.allanimals.length;
-            vm.allanimals.push(animal);
-        }
+        
 
     }
 })(angular)

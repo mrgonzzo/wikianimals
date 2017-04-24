@@ -1,8 +1,20 @@
-
-.col-md-6{
-    width: 50%;
-    float: left;
+.clearfix {
+  overflow: auto;
 }
+.list{
+    background-color: blue;
+    
+}
+.display{
+    background-color: lime;
+    float:left;
+}
+.col-md-6{
+     width: 700px;
+     height: 600px;
+    border: 1px solid;
+    border-color: lightcoral;
+    }
 .card{
     border: 1px solid;
     width: 220px;
@@ -16,11 +28,12 @@
 .ciname{
     font-style: italic;
 }
-.clearfix {
-  overflow: auto;
-}
+
 .detname{
     height: 25px;
+}
+.button{
+    margin: 1px 1px 1px 1px;
 }
 .buttonus{
     border-style: solid;

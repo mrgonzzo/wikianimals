@@ -25,10 +25,17 @@
       name:'aboutus',
       url:'/aboutus',
       template:'<comp-aboutus></comp-aboutus>'
-    }
+    };
+    var crud ={
+      name:'crud',
+      url:'/crud',
+      template:'<comp-crud></comp-crud>'
+
+    };
     $stateProvider.state(main);
     $stateProvider.state(detail);
     $stateProvider.state(about);
+    $stateProvider.state(crud);
     $urlRouterProvider.otherwise('/main');
   }
 

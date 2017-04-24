@@ -1,0 +1,13 @@
+<h1>ESTO ES CRUD</h1>
+<div class="formulario">
+ <!--      <p> Name: <input type="text" ng-model="compCrud.name" ng-class="compCrud.clase ? 'class-if-true' : 'class-if-false'"></p> -->
+     <p> Name: <input type="text" ng-model="compCrud.name" ng-class="compCrud.clase"></p>{{compCrud.name}}
+     <p> Cientific name:<input type="text" ng-model="compCrud.ciname" ng-class="compCrud.clase"></p>
+     <p> img: <input type="text" ng-model="compCrud.picture" ng-class="compCrud.clase"></p>
+     <p>Type of animal <select ng-model="compCrud.type" >
+         <option value="1">australiano</option>
+         <option value="2">acuatico</option>
+         <option value="3">europeo</option>
+     </select></p>
+     <button ng-click="compCrud.addForm()">Añadir</button>
+   </div>
