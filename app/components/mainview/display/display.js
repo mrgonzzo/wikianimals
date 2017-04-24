@@ -21,7 +21,7 @@ function controladorDisplay(animalFactory) {
             
         }
 function getRandomSpan(){
-   return randomInt=Math.floor((Math.random()*7));
+   return randomInt=Math.floor((Math.random()*(vm.allanimals.length)));
   };
   
 }

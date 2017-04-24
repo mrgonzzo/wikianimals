@@ -17,8 +17,10 @@
             return animalsarray;
         };
 
-        module.getAnimalById = function (idanimal) {
-            console.log("idanimal: " + idanimal);
+        module.getAnimalById = function (_idanimal_) {
+            var animal = '';
+            var idanimal = parseInt(_idanimal_)
+           
             
             //es interesante usar firewalls
             if (!idanimal){
@@ -27,7 +29,7 @@
             //con un while es mas rapido (no importa la posicion) while (len--)
             for (var i = 0; i < animalsarray.length; i++) {
                 //lo optimo es usar los tres iguales para comprobar tambien el tipo además del valor (más eficiente)
-                if (idanimal == animalsarray[i].id) {
+                if (idanimal === animalsarray[i].id) {
                     animal = animalsarray[i];
                 }
             }

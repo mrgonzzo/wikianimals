@@ -1,6 +1,43 @@
 <div class="list clearfix">
+ <!--  <p> <input type="text" ng-model="compListanimals.animalBuscado">
+    {{compListanimals.animalBuscado}}</p>
+    <p><input type="date" ng-model="compListanimals.fecha"></p>
+<p><input type="radio" ng-model="compListanimals.radio" value="macho">MACHO</p>
+<p><input type="radio" ng-model="compListanimals.radio" value="hembra">HEMBRA</p>
+<p>elijo {{compListanimals.radio}}
+<p><input type="checkbox" ng-model="compListanimals.spam">acepto condiciones -> vale {{compListanimals.spam}}</p>
+<p>
+
+       <select ng-model="animalsList.combo" >
+
+           <option value="1">Soy el uno</option>
+
+            <option value="2">Soy el dos</option>
+
+           <option value="3">Soy el tres</option>          
+
+       </select>
+
+       {{animalsList.combo}}
+
+   </p> -->
+   <div class="formulario">
+     <p> Name: <input type="text" ng-model="compListanimals.name"></p>
+     <p> Cientific name:<input type="text" ng-model="compListanimals.ciname"></p>
+     <p> img: <input type="text" ng-model="compListanimals.picture"></p>
+     <p>Type of animal <select ng-model="compListanimals.type" >
+         <option value="1">australiano</option>
+         <option value="2">acuatico</option>
+         <option value="3">europeo</option>
+     </select></p>
+     <button ng-click="compListanimals.addForm()">Añadir</button>
+   </div>
     <lu>
-        <comp-animalcard class="card clearfix" ng-repeat="item in compListanimals.allanimals track by $index"  item-animal="item" ng-click="compListanimals.goToDetail(item.id)">
+        <comp-animalcard 
+           class="card clearfix" 
+           ng-repeat="item in compListanimals.allanimals track by $index"  
+           item-animal="item" 
+           ng-click="compListanimals.goToDetail(item.id)">
         </comp-animalcard>
     </lu>
 </div>
