@@ -13,17 +13,13 @@ function controladorCompCrud ($state,animalFactory){
   vm.allanimals = animalFactory.getAllAnimals();
  vm.addForm = function () {
             var animal = {};
-            if (!vm.name) {
+            vm.clase = 'formvirgin';
+            if (!vm.name || !vm.ciname||!vm.picture||!vm.type ) {
                 vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
+            } 
+            else 
+            { vm.clase = 'formok' 
 
-            if (!vm.ciname) {
-                vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
-
-            if (!vm.picture) {
-                vm.clase = 'formko';
-            } else { vm.clase = 'formok' };
             
             animal.name = vm.name;
             animal.ciname = vm.ciname;
@@ -42,6 +38,7 @@ function controladorCompCrud ($state,animalFactory){
             animal.type = tipo;
             animal.id = vm.allanimals.length;
             vm.allanimals.push(animal);
+            };
         }
 }
 })(angular)
