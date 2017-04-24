@@ -13,6 +13,9 @@
         vm.$onInit = function () {
             vm.allanimals = animalFactory.getAllAnimals();
         };
+       
+       
+
         vm.goToDetail = function (_idAnimal_){
             var _id_ = parseInt(_idAnimal_)
             $state.go('detail',{idAnimal:_id_});

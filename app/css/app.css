@@ -42,3 +42,13 @@
 .detpicture{
     width: 400px;
     }
+
+.australiano{
+background: green;
+}
+.acuatico{
+background: blue;
+}
+.europeo{
+    background: red;
+}
