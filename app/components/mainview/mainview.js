@@ -28,7 +28,7 @@
             console.log(vm.mivariable);//al esperar 1s para que se asigne pamplinas, vm.mivariabe esta undefined 
             */
 
-        /*esto es una solucion, pero se lia si hay muchas funciones ()
+        /*EJEMPLO 2 esto es una solucion, pero se lia si hay muchas funciones, como los if anidados ()
     vm.demoAsinc = function (callback) {
         setTimeout(function () {
             callback('pamplinas');
@@ -42,6 +42,7 @@
     
     console.log(vm.mivariable);
 }*/
+/**ejemplo 3 COmo se hacen las cosas: */
         vm.demoAsincronia = function () {
             /* PASO 1
             Creamos la promesa:
