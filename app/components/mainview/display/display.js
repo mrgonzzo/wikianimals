@@ -14,7 +14,7 @@ function controladorDisplay($state,animalFactory) {
     //tener los datos controlados desde un solo sitio
      vm.allanimals = animalFactory.getAllAnimals();
     vm.addRandomAnimal = function (){
-        var item = getRandomSpan()
+        var item = getRandomSpan();
             vm.allanimals.push(vm.allanimals[item]);
          }
 function getRandomSpan(){

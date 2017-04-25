@@ -6,11 +6,11 @@
         var animalsarray = [
             { id: 1, name: "ornitorrinco", ciname: "Ornithorhynchus anatinus", picture: "Ornitorrinco.jpg", type: 'australiano'},
             { id: 2, name: "pez rosado con manos", ciname: "Brachiopsilus dianthus", picture: "pez-manos-rosa.jpg",type: 'acuatico' },
-            { id: 3, name: "topo nariz de estrella", ciname: "Condylura cristata", picture: "topo-nariz-estrella.jpg", type: 'europeo' }/*,
+            { id: 3, name: "topo nariz de estrella", ciname: "Condylura cristata", picture: "topo-nariz-estrella.jpg", type: 'europeo' },
             { id: 4, name: "Cangrejo yeti", ciname: "Kiwa hirsuta", picture: "cangrejo.jpg",type: 'acuatico'},
             { id: 5, name: "oso de agua", ciname: "Tardigrada", picture: "tardigrada.gif" ,type: 'acuatico'},
             { id: 6, name: "Lagarto cornudo", ciname: "Phrynosoma cornutum", picture: "lagarto.gif", type: 'australiano' },
-            { id: 7, name: "Gato esfinge", ciname: "Sphynx", picture: "Sphynx.gif", type: 'europeo' }*/
+            { id: 7, name: "Gato esfinge", ciname: "Sphynx", picture: "Sphynx.gif", type: 'europeo' }
         ];
 
         module.getAllAnimals = function () {
