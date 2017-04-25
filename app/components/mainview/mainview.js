@@ -8,7 +8,7 @@
         // declaramos un alias para no tener que usar $ctrl.
         controllerAs: 'compMain'
     })
-    function controladorCompMainView() {
+    function controladorCompMainView($q) {
         var vm = this;
         /**EJEMPLO ASINCRONIA 1
         vm.demoAsinc =function(){
